@@ -11,7 +11,10 @@ class Day001Test {
     public static final SecureRandom SECURE_RANDOM = new SecureRandom();
 
     private static int generateRandomNumberBetween(int minimum, int maximum) {
-        return SECURE_RANDOM.nextInt(maximum - minimum) + minimum;
+
+        int result = SECURE_RANDOM.nextInt(maximum - minimum) + minimum;
+        System.out.println("result: "+ result);
+        return result;
     }
 
     @Test
